@@ -1,4 +1,4 @@
-From cec6e75ea215aacfb7d70eb0e3ab4b2a45fbb159 Mon Sep 17 00:00:00 2001
+From 5f8cb581063da3bdcc918956da664c33d8966377 Mon Sep 17 00:00:00 2001
 From: Alex Corcoles <alex@molly.ipa.pdp7.net>
 Date: Sat, 16 Jul 2022 23:53:42 +0200
 Subject: [PATCH] Create RPM
@@ -92,7 +92,7 @@ index 0000000..6af18a0
 +    useradd -r -g bitwarden_rs -d / -s /sbin/nologin bitwarden_rs
 +exit 0
 diff --git a/Cargo.toml b/Cargo.toml
-index f2ef16c..794d477 100644
+index 4f4e4f0..5fc6d38 100644
 --- a/Cargo.toml
 +++ b/Cargo.toml
 @@ -1,6 +1,6 @@
@@ -112,7 +112,7 @@ index f2ef16c..794d477 100644
  
  [features]
  # default = ["sqlite"]
-@@ -156,3 +157,12 @@ multer = { git = "https://github.com/BlackDex/multer-rs", rev = "477d16b7fa0f361
+@@ -163,3 +164,12 @@ multer = { git = "https://github.com/BlackDex/multer-rs", rev = "477d16b7fa0f361
  [profile.release]
  strip = "debuginfo"
  lto = "thin"
