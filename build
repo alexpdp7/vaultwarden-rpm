@@ -2,7 +2,7 @@
 
 set -ue
 
-VERSION=1.29.2
+VERSION=1.30.0
 
 git clone https://github.com/dani-garcia/vaultwarden.git
 cd vaultwarden
@@ -11,7 +11,7 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 sed "s/---version---/$VERSION/" <../0001-Create-RPM.patch >patch
 git am patch
-curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain $(cat rust-toolchain)
+curl https://sh.rustup.rs -sSf | sh -s -- -y
 $HOME/.cargo/bin/cargo install cargo-rpm
 $HOME/.cargo/bin/cargo rpm build --verbose
 rpmdev-extract target/release/rpmbuild/SRPMS/*.src.rpm
