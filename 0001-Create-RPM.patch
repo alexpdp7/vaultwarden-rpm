@@ -1,4 +1,4 @@
-From 38d6278022b5a3aa63fcbbf3958b499f024b5f38 Mon Sep 17 00:00:00 2001
+From 2c15ad33dedefbe2535a24cdc56e4fb2fbeb3197 Mon Sep 17 00:00:00 2001
 From: Alex Corcoles <alex@molly.ipa.pdp7.net>
 Date: Sat, 16 Jul 2022 23:53:42 +0200
 Subject: [PATCH] Create RPM
@@ -92,7 +92,7 @@ index 00000000..6af18a04
 +    useradd -r -g bitwarden_rs -d / -s /sbin/nologin bitwarden_rs
 +exit 0
 diff --git a/Cargo.toml b/Cargo.toml
-index ecb7f917..39f99065 100644
+index e720219c..1b9c1402 100644
 --- a/Cargo.toml
 +++ b/Cargo.toml
 @@ -1,6 +1,6 @@
@@ -112,7 +112,7 @@ index ecb7f917..39f99065 100644
  
  [features]
  # default = ["sqlite"]
-@@ -187,3 +188,12 @@ split-debuginfo = "unpacked"
+@@ -181,3 +182,12 @@ split-debuginfo = "unpacked"
  # This is a huge speed improvement during testing
  [profile.dev.package.argon2]
  opt-level = 3
