@@ -1,4 +1,4 @@
-From d8d6f6eb06d93bc6d0d0b58d5a4f6e25ffaef338 Mon Sep 17 00:00:00 2001
+From 7720618ddbdcf95075b7019d62670991ca148649 Mon Sep 17 00:00:00 2001
 From: Alex Corcoles <alex@molly.ipa.pdp7.net>
 Date: Sat, 16 Jul 2022 23:53:42 +0200
 Subject: [PATCH] Create RPM
@@ -126,5 +126,5 @@ index 7fddd431..96e275a8 100644
 +[package.metadata.rpm.files]
 +"bitwarden_rs.service" = { path = "/usr/lib/systemd/system/bitwarden_rs.service" }
 -- 
-2.39.3
+2.43.0
 
