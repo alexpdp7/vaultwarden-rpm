@@ -1,4 +1,4 @@
-From 7720618ddbdcf95075b7019d62670991ca148649 Mon Sep 17 00:00:00 2001
+From ee2c6ab2f0508ed058cc15fe651096e2fabe93ff Mon Sep 17 00:00:00 2001
 From: Alex Corcoles <alex@molly.ipa.pdp7.net>
 Date: Sat, 16 Jul 2022 23:53:42 +0200
 Subject: [PATCH] Create RPM
@@ -92,7 +92,7 @@ index 00000000..6af18a04
 +    useradd -r -g bitwarden_rs -d / -s /sbin/nologin bitwarden_rs
 +exit 0
 diff --git a/Cargo.toml b/Cargo.toml
-index 7fddd431..96e275a8 100644
+index 8eb905b0..3457eb0b 100644
 --- a/Cargo.toml
 +++ b/Cargo.toml
 @@ -1,6 +1,6 @@
@@ -103,7 +103,7 @@ index 7fddd431..96e275a8 100644
 +version = "---version---"
  authors = ["Daniel García <dani-garcia@users.noreply.github.com>"]
  edition = "2021"
- rust-version = "1.73.0"
+ rust-version = "1.74.0"
 @@ -11,6 +11,7 @@ readme = "README.md"
  license = "AGPL-3.0-only"
  publish = false
@@ -112,10 +112,10 @@ index 7fddd431..96e275a8 100644
  
  [features]
  # default = ["sqlite"]
-@@ -190,3 +191,12 @@ strip = "symbols"
- lto = "fat"
- codegen-units = 1
- panic = "abort"
+@@ -247,3 +248,12 @@ unnecessary_self_imports = "deny"
+ unused_async = "deny"
+ verbose_file_reads = "deny"
+ zero_sized_map_values = "deny"
 +
 +[package.metadata.rpm.cargo]
 +buildflags = ["--release", "--features=sqlite"]
