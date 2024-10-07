@@ -1,4 +1,4 @@
-From 8b2acf4663973cd05ff34078f560c6c5f9bcb5b3 Mon Sep 17 00:00:00 2001
+From 1fbaadb226e68302557ad5ca6a9724cf1a0450f8 Mon Sep 17 00:00:00 2001
 From: Alex Corcoles <alex@molly.ipa.pdp7.net>
 Date: Sat, 16 Jul 2022 23:53:42 +0200
 Subject: [PATCH] Create RPM
@@ -92,7 +92,7 @@ index 00000000..6af18a04
 +    useradd -r -g bitwarden_rs -d / -s /sbin/nologin bitwarden_rs
 +exit 0
 diff --git a/Cargo.toml b/Cargo.toml
-index d8dd897b..e8f48bd8 100644
+index 63060089..3fe8512d 100644
 --- a/Cargo.toml
 +++ b/Cargo.toml
 @@ -1,6 +1,6 @@
@@ -112,8 +112,8 @@ index d8dd897b..e8f48bd8 100644
  
  [features]
  # default = ["sqlite"]
-@@ -244,3 +245,12 @@ unnecessary_self_imports = "deny"
- unused_async = "deny"
+@@ -262,3 +263,12 @@ unused_async = "deny"
+ unused_self = "deny"
  verbose_file_reads = "deny"
  zero_sized_map_values = "deny"
 +
@@ -126,5 +126,5 @@ index d8dd897b..e8f48bd8 100644
 +[package.metadata.rpm.files]
 +"bitwarden_rs.service" = { path = "/usr/lib/systemd/system/bitwarden_rs.service" }
 -- 
-2.39.2
+2.39.5
 
