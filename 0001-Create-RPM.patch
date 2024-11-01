@@ -1,4 +1,4 @@
-From 1fbaadb226e68302557ad5ca6a9724cf1a0450f8 Mon Sep 17 00:00:00 2001
+From 61df6fab502ab3d72e0ade8fc99ac909ecb9b33c Mon Sep 17 00:00:00 2001
 From: Alex Corcoles <alex@molly.ipa.pdp7.net>
 Date: Sat, 16 Jul 2022 23:53:42 +0200
 Subject: [PATCH] Create RPM
@@ -92,7 +92,7 @@ index 00000000..6af18a04
 +    useradd -r -g bitwarden_rs -d / -s /sbin/nologin bitwarden_rs
 +exit 0
 diff --git a/Cargo.toml b/Cargo.toml
-index 63060089..3fe8512d 100644
+index 934e0321..e07afee0 100644
 --- a/Cargo.toml
 +++ b/Cargo.toml
 @@ -1,6 +1,6 @@
@@ -103,7 +103,7 @@ index 63060089..3fe8512d 100644
 +version = "---version---"
  authors = ["Daniel García <dani-garcia@users.noreply.github.com>"]
  edition = "2021"
- rust-version = "1.79.0"
+ rust-version = "1.80.0"
 @@ -11,6 +11,7 @@ readme = "README.md"
  license = "AGPL-3.0-only"
  publish = false

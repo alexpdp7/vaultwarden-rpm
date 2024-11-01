@@ -2,7 +2,7 @@
 
 set -ue
 
-VERSION=1.32.1
+VERSION=1.32.3
 
 git clone https://github.com/dani-garcia/vaultwarden.git
 cd vaultwarden
