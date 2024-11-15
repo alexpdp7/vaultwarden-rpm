@@ -1,4 +1,4 @@
-From 61df6fab502ab3d72e0ade8fc99ac909ecb9b33c Mon Sep 17 00:00:00 2001
+From be9a276bf512482331c6eaf83dbfc5a6f48c4b7d Mon Sep 17 00:00:00 2001
 From: Alex Corcoles <alex@molly.ipa.pdp7.net>
 Date: Sat, 16 Jul 2022 23:53:42 +0200
 Subject: [PATCH] Create RPM
@@ -92,7 +92,7 @@ index 00000000..6af18a04
 +    useradd -r -g bitwarden_rs -d / -s /sbin/nologin bitwarden_rs
 +exit 0
 diff --git a/Cargo.toml b/Cargo.toml
-index 934e0321..e07afee0 100644
+index 78a1a4b5..733f9474 100644
 --- a/Cargo.toml
 +++ b/Cargo.toml
 @@ -1,6 +1,6 @@
