@@ -1,4 +1,4 @@
-From be9a276bf512482331c6eaf83dbfc5a6f48c4b7d Mon Sep 17 00:00:00 2001
+From d2149a619b45089526a48bd78b7194733856c688 Mon Sep 17 00:00:00 2001
 From: Alex Corcoles <alex@molly.ipa.pdp7.net>
 Date: Sat, 16 Jul 2022 23:53:42 +0200
 Subject: [PATCH] Create RPM
@@ -92,7 +92,7 @@ index 00000000..6af18a04
 +    useradd -r -g bitwarden_rs -d / -s /sbin/nologin bitwarden_rs
 +exit 0
 diff --git a/Cargo.toml b/Cargo.toml
-index 78a1a4b5..733f9474 100644
+index 150b3b9d..38ce8860 100644
 --- a/Cargo.toml
 +++ b/Cargo.toml
 @@ -1,6 +1,6 @@
@@ -112,7 +112,7 @@ index 78a1a4b5..733f9474 100644
  
  [features]
  # default = ["sqlite"]
-@@ -262,3 +263,12 @@ unused_async = "deny"
+@@ -265,3 +266,12 @@ unused_async = "deny"
  unused_self = "deny"
  verbose_file_reads = "deny"
  zero_sized_map_values = "deny"
